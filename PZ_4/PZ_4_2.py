@@ -26,7 +26,7 @@ while type(p) != float:    # Обработка исключений
 
 pers = 1000 / 100 * p
 
-while s <= 1100:
+while s < 1100:
     s += pers
     k += 1
 
