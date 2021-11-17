@@ -27,9 +27,9 @@ while type(a) != int:   # Обработка исключений
 
 b = input('Введите значение: ')  # Ввод данных
 
-while type(b) != int:  # Обработка исключений
+while type(b) != float:  # Обработка исключений
     try:
-        b = int(b)
+        b = float(b)
     except ValueError:
         print('Введен неверный тип данных')
         b = input('Введите значение в метрах: ')
