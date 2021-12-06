@@ -1,9 +1,9 @@
 # Дан список размера N. Найти количество участков, на которых его элементы
 # монотонно возрастают.
 
-import random
+import random   # Импортирогвание "random"
 
-n = input("Введите размер списка: ")
+n = input("Введите размер списка: ")    # Ввод переменных
 while type(n) != int:
     try:
         n = int(n)
@@ -13,6 +13,7 @@ while type(n) != int:
 a = [random.randint(0, 20) for i in range(n)]
 print(a)
 t = 0
+
 for i in range(n):
     if a[i] < a[i+1]:
         t += 1
