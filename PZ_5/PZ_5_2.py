@@ -7,7 +7,9 @@
 # выводя результат каждого добавления.
 
 def addleftdigit(d1, d2, k):     # Задание функциий
-    return int(str(d1) + str(d2) + str(k))
+    print(int(str(d2) + str(k)))
+    print(int(str(d1) + str(d2) + str(k)))
+    exit(0)
 
 
 def main():
