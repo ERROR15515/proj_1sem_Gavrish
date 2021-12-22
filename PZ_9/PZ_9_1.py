@@ -10,20 +10,30 @@ magnit = {'молоко', 'соль', 'сахар'}    # ввод перемен
 five = {'мясо', 'молоко', 'сыр'}
 cross = {'молоко', 'творог', 'сыр', 'сахар'}
 
-a = [magnit, five, cross]       # для удобства работы
-b = ['Магнит', 'Пятерочка', 'Перекресток']
-c = []
+if 'сыр' in magnit:
+    pass
+else:
+    print('1) Магнит')
+if 'сыр' in five:
+    pass
+else:
+    print('1) Пятерочка')
+if 'сыр' in cross:
+    pass
+else:
+    print('1) Перекресток')
 
-for i in range(len(a)):
-    if 'сыр' not in a[i]:
-        c.append(b[i])
 
-    if 'молоко' and 'сахар' in a[i]:
-        c.append(b[i])
+if 'молоко' and 'сахар' in magnit & five:
+    print('2) Магнит, Пятерочка')
+elif 'молоко' and 'сахар' in magnit & cross:
+    print('2) Магнит, Перекресток')
+elif 'молоко' and 'сахар' in cross & five:
+    print('2) Перекресток, Пятерочка')
 
-    if 'соль' in a[i]:
-        c.append(b[i])
-
-print('1) ', c[0])
-print('2) ', c[1], ',', c[3])
-print('3) ', c[2])
+if 'соль' in magnit:
+    print('3) Магнит')
+if 'соль' in five:
+    print('3) Пятерочка')
+elif 'соль' in cross:
+    print('3) Перекресток')
